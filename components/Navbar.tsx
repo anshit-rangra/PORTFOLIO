@@ -32,7 +32,7 @@ const Navbar = () => {
 
         </ul>
 
-        <h1 className="text-3xl font-thin font-mono hover:cursor-pointer">Anshit Rangra</h1>
+        <h1 className="text-3xl font-thin font-mono hover:cursor-pointer text-[#a7a7a7]">Anshit Rangra</h1>
 
     </nav>
   )

@@ -28,7 +28,9 @@ body {
   display: flex;
   flex-direction: column;
   
-
+  & span {
+    color: #a7a7a7;
+  }
   
 }
 
