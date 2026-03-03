@@ -1,10 +1,15 @@
 import Scene from "@/components/Scene";
 import Image from "next/image";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
     <>
-    <h1 className="text-8xl">Welcome to My Portfolio</h1>
+    
+    <main>
+      <HeroSection />
+    </main>
+
     <video
         autoPlay
         loop
