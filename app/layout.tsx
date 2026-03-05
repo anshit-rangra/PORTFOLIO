@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://anshitrangra.dev";
+const siteUrl = "https://anshit-portfolio-pi.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -106,8 +106,9 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
+    "@type": "Website",
     name: "Anshit Rangra",
+    alternameName: "Anshit Rangra Portfolio",
     url: siteUrl,
     image: `${siteUrl}/og-image.png`,
     jobTitle: "Full Stack Developer & Web3 Developer",
