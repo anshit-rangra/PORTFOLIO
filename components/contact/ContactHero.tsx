@@ -10,7 +10,7 @@ const ContactHero = () => {
   }, []);
 
   return (
-    <section className="relative w-full pt-32 pb-20 px-10 md:px-20 lg:px-28 overflow-hidden">
+    <section className="relative w-full pt-24 sm:pt-32 pb-14 sm:pb-20 px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 overflow-hidden">
       <div className="absolute top-20 left-10 w-72 h-72 bg-red-500/10 rounded-full blur-[120px] animate-pulse" />
       <div className="absolute bottom-10 right-20 w-80 h-80 bg-blue-500/8 rounded-full blur-[150px] animate-pulse delay-1000" />
 
@@ -33,7 +33,7 @@ const ContactHero = () => {
           mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.9]">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.9]">
           <span className="text-white/90 block">Let&apos;s</span>
           <span className="hero-name-gradient block">Talk.</span>
         </h1>

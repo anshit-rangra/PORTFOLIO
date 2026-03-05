@@ -15,7 +15,7 @@ const categories = [
   {
     title: "Backend",
     color: "#339933",
-    skills: ["Node.js", "Express.js", "Socket.io", "REST APIs", "GraphQL"],
+    skills: ["Node.js", "Express.js", "Socket.io", "REST APIs", "SSR"],
   },
   {
     title: "Databases",
@@ -91,19 +91,19 @@ const TechDNA = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-32 overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
       <div className="absolute top-1/3 -left-20 w-80 h-80 bg-purple-500/5 rounded-full blur-[150px]" />
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-emerald-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-10 md:px-20 lg:px-28 mb-16">
+      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
             Tech Stack
           </span>
         </div>
-        <h2 className="text-5xl md:text-6xl font-black tracking-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight">
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Tech DNA</span>
         </h2>
@@ -115,7 +115,7 @@ const TechDNA = () => {
       {/* Category grid */}
       <div
         ref={gridRef}
-        className="px-10 md:px-20 lg:px-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
       >
         {categories.map((cat, i) => (
           <div

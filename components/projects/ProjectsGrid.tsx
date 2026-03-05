@@ -20,49 +20,50 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "DeFi Dashboard",
+    title: "DeFi Token Store",
     description:
-      "A real-time decentralized finance dashboard that tracks token prices, LP positions, and wallet analytics across multiple chains.",
-    tags: ["React", "Ethers.js", "Node.js", "WebSocket"],
+      "A full-stack decentralized exchange (DEX) simulation platform where users can create token pools, buy/sell tokens, claim daily airdrops, and manage their portfolios — all with a virtual currency system.",
+    tags: ["React", "MongoDB", "Express.js", "Node.JS"],
     color: "#9945FF",
     icon: "📊",
-    category: "Web3",
-    github: "https://github.com",
-    live: "https://example.com",
+    category: "Web2",
+    github: "https://github.com/anshit-rangra/Mega-DEX",
+    live: "https://mega-dex-eosin.vercel.app/",
     status: "live",
   },
   {
     title: "AI Chat Platform",
     description:
       "An intelligent chatbot platform powered by LangChain and RAG pipelines, with conversation memory and document analysis capabilities.",
-    tags: ["Next.js", "LangChain", "Vector DB", "OpenAI"],
+    tags: ["React", "MongoDB", "Express.js", "LangChain", "Vector DB", "OpenAI"],
     color: "#F43F5E",
     icon: "🧠",
     category: "AI",
-    github: "https://github.com",
-    status: "building",
+    github: "https://github.com/anshit-rangra/AI-ADVANCED-BOT",
+    live: "https://ai-advanced-bot.onrender.com",
+    status: "live",
   },
   {
-    title: "NFT Marketplace",
+    title: "Medical Recorder",
     description:
-      "A full-featured NFT marketplace on Solana with minting, listing, bidding, and royalty enforcement built using Anchor framework.",
-    tags: ["Solana", "Rust", "Anchor", "React"],
+      "An application which will store the patient data on the etherium blockchain. The patient can share the data with the doctor and the doctor can also update the data of the patient. The data is stored on the blockchain so it is secure and transparent.",
+    tags: ["Solidity", "Hardhat", "Ethereum", "React"],
     color: "#14F195",
-    icon: "🎨",
+    icon: "📝",
     category: "Web3",
-    github: "https://github.com",
+    github: "https://github.com/anshit-rangra/Web-3-Patient-Details",
     status: "completed",
   },
   {
-    title: "Real-time Collaboration Tool",
+    title: " Liar's Bar",
     description:
-      "A Google Docs-style collaborative editor with real-time cursors, presence indicators, and conflict-free editing using CRDTs.",
-    tags: ["Next.js", "Socket.io", "PostgreSQL", "Redis"],
+      "A real-time multiplayer bluffing card game built with React, Socket.IO, and Express. Play with friends — bluff your way to victory or call out the liars !",
+    tags: ["React", "Socket.io", "MongoDb", "Redis", "Express.js", "Node.JS"],
     color: "#3B82F6",
     icon: "📝",
     category: "Full Stack",
-    github: "https://github.com",
-    live: "https://example.com",
+    github: "https://github.com/anshit-rangra/Liar-s-Bar?tab=readme-ov-file",
+    live: "https://liar-s-bar-3y36.vercel.app",
     status: "live",
   },
   {
@@ -73,19 +74,17 @@ const projects: Project[] = [
     color: "#F59E0B",
     icon: "🛒",
     category: "Backend",
-    github: "https://github.com",
-    status: "completed",
+    status: "building",
   },
   {
-    title: "Chess Engine",
+    title: "Team Career Guru",
     description:
-      "A browser-based chess game with an AI opponent using minimax algorithm with alpha-beta pruning. Includes move validation and game history.",
-    tags: ["TypeScript", "React", "Algorithm", "Canvas"],
+      "An Indian consultancy providing career counselling, skill development, and recruitment services to bridge education-employment gaps.",
+    tags: ["TypeScript", "NextJS", "GSAP"],
     color: "#10B981",
     icon: "♟️",
     category: "Full Stack",
-    github: "https://github.com",
-    live: "https://example.com",
+    live: "https://teamcareergurus.in/",
     status: "live",
   },
   {
@@ -96,20 +95,45 @@ const projects: Project[] = [
     color: "#EF4444",
     icon: "🌐",
     category: "Frontend",
-    github: "https://github.com",
-    live: "https://anshit.dev",
+    github: "https://github.com/anshit-rangra/PORTFOLIO",
+    live: "#",
     status: "live",
   },
   {
-    title: "Blockchain Voting System",
+    title: "SpaceX 3D Experience",
     description:
-      "A transparent on-chain voting dApp built on Ethereum. Votes are immutable, verifiable, and completely decentralized.",
-    tags: ["Solidity", "Hardhat", "Ethers.js", "React"],
+      "A stunning, interactive 3D SpaceX-themed website built with React, React Three Fiber (Three.js), and GSAP. This project reimagines SpaceX's digital presence through immersive 3D models, scroll-triggered animations, and a cinematic UI.",
+    tags: ["React", "Three.js", "GSAP"],
     color: "#8B5CF6",
     icon: "🗳️",
-    category: "Web3",
-    github: "https://github.com",
+    category: "Frontend",
+    github: "https://github.com/anshit-rangra/SpaceX-3d",
     status: "completed",
+  },
+
+  {
+    title: "QR Attendance System",
+    description:
+      "A QR Code-based Attendance System built using React.js, Express.js, and MongoDB, designed to simplify and automate attendance marking for students and teachers.",
+    tags: ["React", "Express.js", "MongoDB", "Node.js"],
+    color: "#8B5CF6",
+    icon: "🗳️",
+    category: "Full Stack",
+    github: "https://github.com/anshit-rangra/QR-Attendence",
+    live: "https://qr-attendence-by5k.onrender.com",
+    status: "completed",
+  },
+  {
+    title: "Food Reeler",
+    description:
+      "FoodReeler is a social media-style web application built with the MERN stack where users can watch, like, and save food reels — short video clips of delicious dishes uploaded by food partners (restaurants, cafés, and food stores).",
+    tags: ["React", "Express.js", "MongoDB", "Node.js"],
+    color: "#8B5CF6",
+    icon: "🗳️",
+    category: "Full Stack",
+    github: "https://github.com/anshit-rangra/FOODY-REELER",
+    live: "https://foody-reeler.onrender.com",
+    status: "live",
   },
 ];
 
@@ -163,8 +187,8 @@ const ProjectsGrid = () => {
       <div className="absolute top-1/4 -right-20 w-80 h-80 bg-purple-500/5 rounded-full blur-[150px]" />
 
       {/* Filter bar */}
-      <div className="px-10 md:px-20 lg:px-28 mb-12">
-        <div className="flex flex-wrap gap-3">
+      <div className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-8 sm:mb-12">
+        <div className="flex flex-wrap gap-2 sm:gap-3">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -184,7 +208,7 @@ const ProjectsGrid = () => {
       {/* Projects grid */}
       <div
         ref={gridRef}
-        className="px-10 md:px-20 lg:px-28 grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6"
       >
         {filteredProjects.map((project, i) => {
           const status = statusConfig[project.status];
@@ -309,7 +333,7 @@ const ProjectsGrid = () => {
       </div>
 
       {/* More coming badge */}
-      <div className="px-10 md:px-20 lg:px-28 mt-16 text-center">
+      <div className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mt-10 sm:mt-16 text-center">
         <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl border border-[#ffffff08] bg-[#0a0a0a]/60 backdrop-blur-md">
           <span className="text-xl">🚧</span>
           <span className="text-[#666] text-sm font-mono">

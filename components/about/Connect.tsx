@@ -93,19 +93,19 @@ const Connect = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-32 overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
       <div className="absolute top-1/3 -right-20 w-80 h-80 bg-red-500/5 rounded-full blur-[150px]" />
       <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-blue-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-10 md:px-20 lg:px-28 mb-16">
+      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
             Get In Touch
           </span>
         </div>
-        <h2 className="text-5xl md:text-6xl font-black tracking-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight">
           <span className="text-white/90">Let&apos;s </span>
           <span className="hero-name-gradient">Connect</span>
         </h2>
@@ -117,7 +117,7 @@ const Connect = () => {
       {/* Social cards */}
       <div
         ref={cardsRef}
-        className="px-10 md:px-20 lg:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
       >
         {socials.map((s, i) => (
           <a
@@ -180,7 +180,7 @@ const Connect = () => {
       </div>
 
       {/* CTA */}
-      <div className="px-10 md:px-20 lg:px-28 mt-20 text-center">
+      <div className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mt-12 sm:mt-20 text-center">
         <p className="text-[#555] text-lg font-mono mb-6">
           Prefer a direct conversation?
         </p>

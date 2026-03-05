@@ -1,21 +1,23 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="relative w-full border-t border-[#ffffff0a] backdrop-blur-xl">
       {/* Glow accent */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-px bg-linear-to-r from-transparent via-red-500/50 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-10 md:px-20 lg:px-28 py-12">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-16 lg:px-20 xl:px-28 py-10 sm:py-12">
         {/* Top row */}
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
           {/* Brand */}
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3">
               <img
                 src="/zodiac.svg"
-                alt="Logo"
+                alt="Anshit Rangra Logo"
                 className="w-10 h-10"
               />
-              <h2 className="text-2xl font-black tracking-tight text-white/90">
+              <h2 className="text-xl sm:text-2xl font-black tracking-tight text-white/90">
                 ANSHIT{" "}
                 <span className="hero-name-gradient">RANGRA</span>
               </h2>
@@ -28,20 +30,25 @@ const Footer = () => {
           </div>
 
           {/* Navigation */}
-          <div className="flex gap-16">
+          <div className="flex gap-10 sm:gap-16">
             <div className="flex flex-col gap-3">
               <h3 className="text-xs font-mono uppercase tracking-widest text-[#555]">
                 Navigate
               </h3>
               <ul className="flex flex-col gap-2">
-                {["Home", "About", "Projects", "Contact"].map((item) => (
-                  <li key={item}>
-                    <a
-                      href={`#${item.toLowerCase()}`}
-                      className="text-[#a7a7a7] text-sm font-mono hover:text-red-500 transition-colors duration-300"
-                    >
-                      {item}
-                    </a>
+                {[
+                  { name: "Home", path: "/" },
+                  { name: "About", path: "/about" },
+                  { name: "Projects", path: "/projects" },
+                  { name: "Contact", path: "/contact" },
+                ].map((item) => (
+                  <li key={item.name}>
+                  <Link
+                    href={item.path}
+                    className="text-[#a7a7a7] text-sm font-mono hover:text-red-500 transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
                   </li>
                 ))}
               </ul>
@@ -53,10 +60,10 @@ const Footer = () => {
               </h3>
               <ul className="flex flex-col gap-2">
                 {[
-                  { label: "GitHub", href: "https://github.com" },
-                  { label: "LinkedIn", href: "https://linkedin.com" },
-                  { label: "Twitter / X", href: "https://x.com" },
-                  { label: "Email", href: "mailto:hello@anshit.dev" },
+                  { label: "GitHub", href: "https://github.com/anshit-rangra" },
+                  { label: "LinkedIn", href: "https://www.linkedin.com/in/anshit-rangra/" },
+                  { label: "Twitter / X", href: "https://x.com/Anshit_Rangra" },
+                  { label: "Email", href: "mailto:anshitrangra@proton.me" },
                 ].map((link) => (
                   <li key={link.label}>
                     <a
@@ -74,14 +81,14 @@ const Footer = () => {
           </div>
 
           {/* Social icons row */}
-          <div className="flex flex-col gap-3 items-end">
+          <div className="flex flex-col gap-3 lg:items-end">
             <h3 className="text-xs font-mono uppercase tracking-widest text-[#555]">
               Socials
             </h3>
             <div className="flex items-center gap-3">
               {/* GitHub */}
               <a
-                href="https://github.com"
+                href="https://github.com/anshit-rangra"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg border border-[#222] flex items-center justify-center text-[#666] hover:text-white hover:border-[#444] hover:bg-white/5 transition-all duration-300"
@@ -93,7 +100,7 @@ const Footer = () => {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/anshit-rangra/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg border border-[#222] flex items-center justify-center text-[#666] hover:text-white hover:border-[#444] hover:bg-white/5 transition-all duration-300"
@@ -105,7 +112,7 @@ const Footer = () => {
 
               {/* Twitter / X */}
               <a
-                href="https://x.com"
+                href="https://x.com/Anshit_Rangra"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg border border-[#222] flex items-center justify-center text-[#666] hover:text-white hover:border-[#444] hover:bg-white/5 transition-all duration-300"
@@ -117,7 +124,7 @@ const Footer = () => {
 
               {/* Email */}
               <a
-                href="mailto:hello@anshit.dev"
+                href="mailto:anshitrangra@proton.me"
                 className="w-10 h-10 rounded-lg border border-[#222] flex items-center justify-center text-[#666] hover:text-white hover:border-[#444] hover:bg-white/5 transition-all duration-300"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,8 +139,8 @@ const Footer = () => {
         <div className="w-full h-px bg-[#ffffff08] my-8" />
 
         {/* Bottom row */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#444] text-xs font-mono">
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+          <p className="text-[#444] text-xs font-mono text-center sm:text-left">
             &copy; {new Date().getFullYear()} Anshit Rangra. All rights reserved.
           </p>
 

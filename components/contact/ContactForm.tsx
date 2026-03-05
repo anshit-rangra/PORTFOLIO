@@ -83,7 +83,7 @@ const ContactForm = () => {
     <section ref={sectionRef} className="relative pb-32 overflow-hidden">
       <div className="absolute top-1/3 -left-20 w-80 h-80 bg-red-500/5 rounded-full blur-[150px]" />
 
-      <div className="px-10 md:px-20 lg:px-28 flex flex-col lg:flex-row gap-16">
+      <div className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-10 sm:gap-16">
         {/* Left — Info */}
         <div ref={infoRef} className="flex-1 flex flex-col gap-8 max-w-md">
           <div>
@@ -93,7 +93,7 @@ const ContactForm = () => {
                 Reach Out
               </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">
               <span className="text-white/90">Send a </span>
               <span className="hero-name-gradient">Message</span>
             </h2>

@@ -118,20 +118,20 @@ const GearSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-32 overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
       {/* Decorative blurs */}
       <div className="absolute top-1/4 -left-20 w-80 h-80 bg-blue-500/5 rounded-full blur-[150px]" />
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-purple-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-10 md:px-20 lg:px-28 mb-16">
+      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
             My Setup
           </span>
         </div>
-        <h2 className="text-5xl md:text-6xl font-black tracking-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight">
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Gears</span>
         </h2>
@@ -143,7 +143,7 @@ const GearSection = () => {
       {/* Gear cards grid */}
       <div
         ref={cardsRef}
-        className="px-10 md:px-20 lg:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
       >
         {gears.map((gear, i) => (
           <div
@@ -197,7 +197,7 @@ const GearSection = () => {
       </div>
 
       {/* Duration badge */}
-      <div ref={badgeRef} className="px-10 md:px-20 lg:px-28 mt-16">
+      <div ref={badgeRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mt-10 sm:mt-16">
         <div className="inline-flex items-center gap-4 px-8 py-5 rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/60 backdrop-blur-md">
           <span className="text-3xl">⏱️</span>
           <div>

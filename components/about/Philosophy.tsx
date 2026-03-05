@@ -36,12 +36,12 @@ const philosophies = [
     color: "#F59E0B",
   },
   {
-    quote: "Ship fast, iterate faster.",
-    description:
-      "Done is better than perfect. I'd rather ship a working MVP today and improve it tomorrow than wait months for perfection.",
-    icon: "🚀",
-    color: "#8B5CF6",
-  },
+  quote: "Impossible said, I'm Possible.",
+  description:
+    "Every big achievement once looked impossible. With the right mindset, persistence, and action, what seems impossible today becomes possible tomorrow.",
+  icon: "🚀",
+  color: "#8B5CF6",
+},
   {
     quote: "The grind is the shortcut.",
     description:
@@ -103,19 +103,19 @@ const Philosophy = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-32 overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
       <div className="absolute top-1/4 -left-20 w-80 h-80 bg-orange-500/5 rounded-full blur-[150px]" />
       <div className="absolute bottom-1/3 -right-20 w-96 h-96 bg-cyan-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-10 md:px-20 lg:px-28 mb-16">
+      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
             What Drives Me
           </span>
         </div>
-        <h2 className="text-5xl md:text-6xl font-black tracking-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight">
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Philosophy</span>
         </h2>
@@ -127,7 +127,7 @@ const Philosophy = () => {
       {/* Grid */}
       <div
         ref={gridRef}
-        className="px-10 md:px-20 lg:px-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
       >
         {philosophies.map((p, i) => (
           <div

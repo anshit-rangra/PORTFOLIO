@@ -20,31 +20,41 @@ const timelineData: TimelineItem[] = [
     year: "2023",
     title: "The Spark — Started Coding",
     description:
-      "Wrote my first line of HTML and got hooked. Dove headfirst into web development, spending every free hour learning HTML, CSS, and JavaScript.",
-    tags: ["HTML", "CSS", "JavaScript"],
+      "Wrote my first line of code and got hooked. Dove headfirst into programming, spending every free hour learning Python, Tkinter and VS Code.",
+    tags: ["Python", "Tkinter", "VS Code"],
     icon: "🌱",
     color: "#34D399",
   },
   {
-    year: "2023",
-    title: "Frontend Foundations",
+    year: "2024",
+    title: "Intro To the WEB",
     description:
-      "Mastered React and discovered the power of component-based thinking. Built several projects and started understanding what \"clean code\" really means.",
-    tags: ["React", "Tailwind CSS", "Git"],
-    icon: "⚛️",
+      "Discovering the world of Web. Learned HTML, CSS, and JavaScript. Built my first static websites and simple interactive pages. The web was my playground.",
+    tags: ["HTML", "CSS", "Javascript"],
+    icon: "🌐",
     color: "#61DAFB",
   },
   {
     year: "2024",
     title: "Going Full Stack",
     description:
-      "Backend called, and I answered. Learned Node.js, Express, databases, and how to build complete applications from scratch. The full picture started to form.",
-    tags: ["Node.js", "Express", "MongoDB", "PostgreSQL"],
+      "Taking interest. Learned MERN Stack to build complete applications from scratch. The full picture started to form.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "PostgreSQL"],
     icon: "🔧",
     color: "#F59E0B",
   },
   {
-    year: "2024",
+    year: "2025",
+    title: "AI, System Design & Beyond",
+    description:
+      "Diving into AI/ML with LangChain, RAG pipelines, and vector databases. Learning system design, microservices, and Docker to build at scale.",
+    tags: ["LangChain", "Docker", "System Design", "AI"],
+    icon: "🧠",
+    color: "#F43F5E",
+  },
+  
+  {
+    year: "2025",
     title: "Entered Web3 & Blockchain",
     description:
       "Fell down the blockchain rabbit hole. Started writing smart contracts in Solidity, built dApps, and explored the decentralized future.",
@@ -53,7 +63,7 @@ const timelineData: TimelineItem[] = [
     color: "#A78BFA",
   },
   {
-    year: "2025",
+    year: "2026-now",
     title: "Solana & Rust",
     description:
       "Expanded to the Solana ecosystem. Picked up Rust, learned Anchor framework, and started building high-performance on-chain programs.",
@@ -61,15 +71,7 @@ const timelineData: TimelineItem[] = [
     icon: "🦀",
     color: "#9945FF",
   },
-  {
-    year: "2025–Now",
-    title: "AI, System Design & Beyond",
-    description:
-      "Diving into AI/ML with LangChain, RAG pipelines, and vector databases. Learning system design, microservices, and Docker to build at scale.",
-    tags: ["LangChain", "Docker", "System Design", "AI"],
-    icon: "🧠",
-    color: "#F43F5E",
-  },
+  
 ];
 
 const Timeline = () => {
@@ -125,19 +127,19 @@ const Timeline = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-32 overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
       <div className="absolute top-1/3 -right-20 w-80 h-80 bg-violet-500/5 rounded-full blur-[150px]" />
       <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-red-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-10 md:px-20 lg:px-28 mb-20">
+      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-12 sm:mb-20">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
             The Journey
           </span>
         </div>
-        <h2 className="text-5xl md:text-6xl font-black tracking-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight">
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Timeline</span>
         </h2>
@@ -147,7 +149,7 @@ const Timeline = () => {
       </div>
 
       {/* Timeline */}
-      <div className="relative px-10 md:px-20 lg:px-28">
+      <div className="relative px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28">
         {/* Vertical line */}
         <div className="absolute left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-[#ffffff15] to-transparent hidden lg:block" />
 
