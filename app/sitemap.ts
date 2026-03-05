@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://anshit-portfolio-pi.vercel.app";
+  const baseUrl = "https://anshit.dynv6.net";
   
   // Standardizing the date format for Google's XML parser
   const lastModifiedDate = new Date().toISOString();

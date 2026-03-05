@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://anshit-portfolio-pi.vercel.app";
+const siteUrl = "https://anshit.dynv6.net";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
       "Full Stack & Web3 Developer from India. Building scalable applications with React, Next.js, Node.js, Solidity, Solana, and AI. 2+ years of experience shipping production apps.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/app.png",
         width: 1200,
         height: 630,
         alt: "Anshit Rangra — Full Stack & Web3 Developer Portfolio",
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     description:
       "Full Stack & Web3 Developer from India. React, Next.js, Node.js, Solidity, Solana, Rust, AI/ML.",
     creator: "@Anshit_Rangra",
-    images: ["/og-image.png"],
+    images: ["/app.png"],
   },
   alternates: {
     canonical: siteUrl,
@@ -110,7 +110,7 @@ export default function RootLayout({
     name: "Anshit Rangra",
     alternameName: "Anshit Rangra Portfolio",
     url: siteUrl,
-    image: `${siteUrl}/og-image.png`,
+    image: `${siteUrl}/app.png`,
     jobTitle: "Full Stack Developer & Web3 Developer",
     description:
       "Full Stack Developer and Web3 Developer from India specializing in React, Next.js, Node.js, Solidity, Solana, Rust, and AI/ML.",

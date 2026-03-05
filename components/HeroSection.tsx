@@ -7,19 +7,19 @@ const placeholderImages = [
   {
     id: 1,
     image: "https://ik.imagekit.io/4ytu59yld/PORTFOLIO/3.jpeg?updatedAt=1772696891307",
-    label: "Portfolio 1",
+    label: "Anshit",
     rotation: "-3deg",
   },
   {
     id: 2,
     image: "https://ik.imagekit.io/4ytu59yld/PORTFOLIO/1.jpg?updatedAt=1772696731040",
-    label: "Portfolio 2",
+    label: "Ansh",
     rotation: "2deg",
   },
   {
     id: 3,
     image: "https://res.cloudinary.com/dle5ioc63/image/upload/v1772697627/2_uotovr.jpg",
-    label: "Portfolio 3",
+    label: "Anshu",
     rotation: "-1deg",
   },
 ];

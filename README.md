@@ -2,7 +2,7 @@
 
 A modern, interactive 3D portfolio showcasing my work as a Full Stack, Web3, and AI Developer. Built with modern web technologies including Next.js, React, Three.js, and GSAP.
 
-🌐 **Live Website**: [anshitrangra.dev](https://anshit-portfolio-pi.vercel.app/)
+🌐 **Live Website**: [anshitrangra.dev](https://anshit.dynv6.net)
 
 ## ✨ Features
 - **Immersive 3D Experience**: Integrated Three.js and React Three Fiber for interactive background scenes.
