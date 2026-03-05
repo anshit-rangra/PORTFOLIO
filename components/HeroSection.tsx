@@ -197,7 +197,7 @@ const HeroSection = () => {
 
       {/* Right Side - Image Gallery with Cool Transitions */}
       <div
-        className={`relative z-10 flex items-center justify-center w-full sm:w-[80%] md:w-[60%] lg:w-[40%] h-[400px] sm:h-[450px] lg:h-full transition-all duration-1000 delay-500 ${
+        className={`relative z-10 flex items-center justify-center w-full sm:w-[80%] md:w-[60%] lg:w-[40%] h-100 sm:h-112.5 lg:h-full transition-all duration-1000 delay-500 ${
           mounted ? "opacity-100 scale-100" : "opacity-0 scale-90"
         }`}
       >
@@ -206,7 +206,7 @@ const HeroSection = () => {
         <div className="absolute w-80 sm:w-96 lg:w-130 h-80 sm:h-96 lg:h-130 rounded-full border border-[#ffffff05] hero-orbit-reverse" />
 
         {/* Main Image Card Stack */}
-        <div className="relative w-[240px] sm:w-[280px] lg:w-[320px] h-72 sm:h-80 lg:h-100 perspective-distant">
+        <div className="relative w-60 sm:w-70 lg:w-[320px] h-72 sm:h-80 lg:h-100 perspective-distant">
           {placeholderImages.map((img, index) => {
             const offset = (index - activeIndex + placeholderImages.length) % placeholderImages.length;
             const isActive = offset === 0;

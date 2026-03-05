@@ -194,7 +194,7 @@ export default function RootLayout({
           aria-hidden="true"
           className="fixed inset-0 w-full h-full object-cover -z-10"
         >
-          <source src="/bg.mp4" type="video/mp4" />
+          <source src="https://ik.imagekit.io/4ytu59yld/PORTFOLIO/bg.mp4" type="video/mp4" />
         </video>
 
         {/* Dark overlay to ensure readability */}

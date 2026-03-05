@@ -52,14 +52,14 @@ const Navbar = () => {
       >
         {/* Logo */}
         <div className="w-12 sm:w-14 lg:w-16 flex justify-center shrink-0">
-          <img src="/zodiac.svg" alt="Anshit Rangra Logo" className="hover:cursor-pointer w-10 sm:w-12 lg:w-[60px]" />
+          <img src="/zodiac.svg" alt="Anshit Rangra Logo" className="hover:cursor-pointer w-10 sm:w-12 lg:w-15" />
         </div>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex justify-around font-mono text-lg lg:text-2xl bg-[#2b28314f] w-auto gap-6 lg:gap-8 px-6 lg:px-8 pt-3 pb-3 rounded-xl border-l-amber-50 border-l-[0.1px]">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <Link href={link.href} className="cursor-pointer nav-elem flex flex-col overflow-hidden max-h-[2rem]">
+              <Link href={link.href} className="cursor-pointer nav-elem flex flex-col overflow-hidden max-h-8">
                 <span>{link.name}</span>
                 <span aria-hidden="true">{link.name}</span>
               </Link>
