@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Anshit Rangra — Portfolio
 
-## Getting Started
+A modern, interactive 3D portfolio showcasing my work as a Full Stack, Web3, and AI Developer. Built with modern web technologies including Next.js, React, Three.js, and GSAP.
 
-First, run the development server:
+🌐 **Live Website**: [anshitrangra.dev](https://anshit-portfolio-pi.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
+- **Immersive 3D Experience**: Integrated Three.js and React Three Fiber for interactive background scenes.
+- **Smooth Animations**: High-performance scroll-triggered animations powered by GSAP and ScrollTrigger.
+- **Modern Tech Stack**: Built with Next.js App Router, React, and Tailwind CSS.
+- **Fully Responsive**: Optimized for seamless viewing across all devices.
+- **SEO Optimized**: Advanced metadata, structured JSON-LD, and semantic HTML for optimal search indexing.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Built With
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Frontend
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3D & Animations
+- [Three.js](https://threejs.org/)
+- [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/)
+- [GSAP (GreenSock Animation Platform)](https://greensock.com/gsap/)
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+To run the project locally, follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
+Make sure you have Node.js and npm (or pnpm/yarn) installed on your system.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/anshit-rangra/PORTFOLIO.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigate into the directory:
+   ```bash
+   cd PORTFOLIO/anshit
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit:
+   `http://localhost:3000`
+
+## 👨‍💻 About Me
+I'm Anshit, a passionate developer from India specializing in React, Next.js, Node.js, Solidity, Solana, Rust, and AI/ML. I have 2+ years of experience rapidly building and perfectly executing scalable applications.
+
+### Connect with Me
+- [LinkedIn](https://www.linkedin.com/in/anshit-rangra/)
+- [X (formerly Twitter)](https://x.com/Anshit_Rangra)
+- [GitHub](https://github.com/anshit-rangra)
+- [Instagram](https://www.instagram.com/anshit.rangra/)
+
+## 📜 License
+This project is open-source and free to explore. If you use code snippets, giving credit is highly appreciated!
