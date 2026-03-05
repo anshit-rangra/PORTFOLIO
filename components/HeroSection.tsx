@@ -49,8 +49,8 @@ const HeroSection = () => {
   return (
     <section className="relative w-full min-h-[calc(100vh-88px)] lg:h-[calc(100vh-88px)] flex flex-col lg:flex-row items-center justify-center lg:justify-between px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 py-20 lg:py-0 overflow-hidden gap-12 lg:gap-0">
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-48 sm:w-72 h-48 sm:h-72 bg-red-500/10 rounded-full blur-[120px] animate-pulse" />
-      <div className="absolute bottom-20 right-10 sm:right-20 w-64 sm:w-96 h-64 sm:h-96 bg-violet-500/10 rounded-full blur-[150px] animate-pulse delay-1000" />
+      <div className="absolute top-20 left-10 w-48 sm:w-72 h-48 sm:h-72 bg-red-500/10 rounded-full blur-[120px]" />
+      <div className="absolute bottom-20 right-10 sm:right-20 w-64 sm:w-96 h-64 sm:h-96 bg-violet-500/10 rounded-full blur-[150px] delay-1000" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 lg:w-150 h-96 lg:h-150 bg-blue-500/5 rounded-full blur-[200px]" />
 
       {/* Left Content */}
@@ -97,7 +97,7 @@ const HeroSection = () => {
           <div className="h-0.5 w-8 sm:w-12 bg-linear-to-r from-red-500 to-transparent hidden sm:block" />
           <h2 className="text-base sm:text-xl md:text-2xl font-mono text-[#a7a7a7]">
             <span className="text-red-500">Full Stack</span> Developer{" "}
-            <span className="text-[#555]">+</span>{" "}
+            <span className="text-[#999]">+</span>{" "}
             <span className="text-violet-400">Web3</span> Developer
           </h2>
         </div>
@@ -128,7 +128,7 @@ const HeroSection = () => {
             <span className="text-2xl sm:text-3xl font-bold text-white hero-name-gradient">
               20+
             </span>
-            <span className="text-[10px] sm:text-xs text-[#666] font-mono uppercase tracking-wider">
+            <span className="text-[10px] sm:text-xs text-[#888] font-mono uppercase tracking-wider">
               Projects
             </span>
           </div>
@@ -137,7 +137,7 @@ const HeroSection = () => {
             <span className="text-2xl sm:text-3xl font-bold text-white hero-name-gradient">
               2+
             </span>
-            <span className="text-[10px] sm:text-xs text-[#666] font-mono uppercase tracking-wider">
+            <span className="text-[10px] sm:text-xs text-[#888] font-mono uppercase tracking-wider">
               Years Exp
             </span>
           </div>
@@ -146,7 +146,7 @@ const HeroSection = () => {
             <span className="text-2xl sm:text-3xl font-bold text-white hero-name-gradient">
               ∞
             </span>
-            <span className="text-[10px] sm:text-xs text-[#666] font-mono uppercase tracking-wider">
+            <span className="text-[10px] sm:text-xs text-[#888] font-mono uppercase tracking-wider">
               Curiosity
             </span>
           </div>
@@ -158,10 +158,10 @@ const HeroSection = () => {
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <button className="hero-cta-primary group relative px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-mono text-xs sm:text-sm tracking-wider uppercase overflow-hidden">
-            <Link href="/projects" passHref>
-              
-            
+          <Link
+            href="/projects"
+            className="hero-cta-primary group relative px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-mono text-xs sm:text-sm tracking-wider uppercase overflow-hidden inline-flex"
+          >
             <span className="relative z-10 text-white flex items-center gap-2">
               View Projects
               <svg
@@ -169,6 +169,7 @@ const HeroSection = () => {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -178,19 +179,19 @@ const HeroSection = () => {
                 />
               </svg>
             </span>
-            </Link>
-          </button>
+          </Link>
 
-          <button className="hero-cta-secondary px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-mono text-xs sm:text-sm tracking-wider uppercase text-[#a7a7a7] hover:text-white transition-colors duration-300">
-            <a href="https://drive.google.com/file/d/15loURQStraXyIloUASpXflzLfn_KbAq9/view?usp=drive_link" target="_blank">
-            <span className="flex items-center gap-2">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              Resume
-            </span>
-            </a>
-          </button>
+          <a
+            href="https://drive.google.com/file/d/15loURQStraXyIloUASpXflzLfn_KbAq9/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero-cta-secondary px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-mono text-xs sm:text-sm tracking-wider uppercase text-[#a7a7a7] hover:text-white transition-colors duration-300 inline-flex items-center gap-2"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Resume
+          </a>
         </div>
       </div>
 
@@ -230,8 +231,11 @@ const HeroSection = () => {
                 {/* Image */}
                 <img
                   src={img.image}
-                  alt={img.label}
+                  alt={isActive ? `Anshit Rangra — photo ${index + 1}` : `Anshit Rangra — photo ${index + 1}`}
                   className="w-full h-full object-cover"
+                  loading={isActive ? "eager" : "lazy"}
+                  fetchPriority={isActive ? "high" : "low"}
+                  decoding="async"
                 />
 
                 {/* Overlay text */}
@@ -259,6 +263,8 @@ const HeroSection = () => {
                     setIsAnimating(false);
                   }, 300);
                 }}
+                aria-label={`View photo ${index + 1}`}
+                aria-pressed={index === activeIndex}
                 className={`h-1.5 rounded-full transition-all duration-500 ${
                   index === activeIndex
                     ? "w-8 bg-red-500"
@@ -275,7 +281,7 @@ const HeroSection = () => {
             mounted ? "opacity-70 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <img src={placeholderImages[(activeIndex + 1) % placeholderImages.length].image} alt="thumbnail" className="w-full h-full object-cover" />
+        <img src={placeholderImages[(activeIndex + 1) % placeholderImages.length].image} alt="" aria-hidden="true" className="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
 
         <div
@@ -283,7 +289,7 @@ const HeroSection = () => {
             mounted ? "opacity-50 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <img src={placeholderImages[(activeIndex + 2) % placeholderImages.length].image} alt="thumbnail" className="w-full h-full object-cover" />
+          <img src={placeholderImages[(activeIndex + 2) % placeholderImages.length].image} alt="" aria-hidden="true" className="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
 
         <div
@@ -291,13 +297,13 @@ const HeroSection = () => {
             mounted ? "opacity-40 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <img src={placeholderImages[(activeIndex + 3) % placeholderImages.length].image} alt="thumbnail" className="w-full h-full object-cover" />
+          <img src={placeholderImages[(activeIndex + 3) % placeholderImages.length].image} alt="" aria-hidden="true" className="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
       </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 hidden lg:flex">
-        <span className="text-[#555] text-xs font-mono tracking-widest uppercase">
+        <span className="text-[#999] text-xs font-mono tracking-widest uppercase">
           Scroll
         </span>
         <div className="w-5 h-8 rounded-full border border-[#333] flex items-start justify-center p-1">

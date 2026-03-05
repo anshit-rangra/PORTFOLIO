@@ -366,7 +366,7 @@ const SkillsSection = () => {
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Skills</span>
         </h2>
-        <p className="text-[#666] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
           Technologies and tools I use to bring ideas to life.
         </p>
       </div>

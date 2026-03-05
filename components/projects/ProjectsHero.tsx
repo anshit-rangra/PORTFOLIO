@@ -21,10 +21,10 @@ const ProjectsHero = () => {
           mounted ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
         }`}
       >
-        <a href="/" className="text-[#666] text-sm font-mono hover:text-red-500 transition-colors">
+        <a href="/" className="text-[#888] text-sm font-mono hover:text-red-500 transition-colors">
           Home
         </a>
-        <span className="text-[#444] text-sm">/</span>
+        <span className="text-[#999] text-sm">/</span>
         <span className="text-red-500 text-sm font-mono">Projects</span>
       </div>
 
@@ -41,7 +41,7 @@ const ProjectsHero = () => {
       </div>
 
       <p
-        className={`text-[#666] text-lg font-mono mt-6 max-w-2xl transition-all duration-700 delay-400 ${
+        className={`text-[#888] text-lg font-mono mt-6 max-w-2xl transition-all duration-700 delay-400 ${
           mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >

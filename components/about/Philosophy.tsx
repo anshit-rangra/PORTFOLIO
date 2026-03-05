@@ -119,7 +119,7 @@ const Philosophy = () => {
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Philosophy</span>
         </h2>
-        <p className="text-[#666] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
           Core beliefs that shape how I work, learn, and grow every day.
         </p>
       </div>

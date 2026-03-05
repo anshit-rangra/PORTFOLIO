@@ -97,7 +97,7 @@ const ContactForm = () => {
               <span className="text-white/90">Send a </span>
               <span className="hero-name-gradient">Message</span>
             </h2>
-            <p className="text-[#666] text-sm font-mono leading-relaxed">
+            <p className="text-[#888] text-sm font-mono leading-relaxed">
               Whether it&apos;s a project idea, freelance opportunity, or just a
               friendly hello — fill out the form and I&apos;ll get back to you
               as soon as possible.
@@ -129,7 +129,7 @@ const ContactForm = () => {
               >
                 <span className="text-2xl">{item.icon}</span>
                 <div>
-                  <p className="text-xs font-mono text-[#555] uppercase tracking-wider">
+                  <p className="text-xs font-mono text-[#999] uppercase tracking-wider">
                     {item.label}
                   </p>
                   <p className="text-sm text-[#a7a7a7] font-mono">{item.value}</p>
@@ -202,7 +202,7 @@ const ContactForm = () => {
             </span>
           </button>
 
-          <p className="text-[#444] text-xs font-mono">
+          <p className="text-[#999] text-xs font-mono">
             Your information is safe — I don&apos;t spam or share data.
           </p>
         </form>

@@ -166,6 +166,12 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <link rel="canonical" href={siteUrl} />
+        {/* Preconnect to external image CDNs to reduce latency */}
+        <link rel="preconnect" href="https://ik.imagekit.io" />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://i.pinimg.com" />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -184,6 +190,8 @@ export default function RootLayout({
           loop
           muted
           playsInline
+          preload="none"
+          aria-hidden="true"
           className="fixed inset-0 w-full h-full object-cover -z-10"
         >
           <source src="/bg.mp4" type="video/mp4" />

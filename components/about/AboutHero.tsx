@@ -29,10 +29,10 @@ const AboutHero = () => {
               mounted ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
             }`}
           >
-            <a href="/" className="text-[#666] text-sm font-mono hover:text-red-500 transition-colors">
+            <a href="/" className="text-[#888] text-sm font-mono hover:text-red-500 transition-colors">
               Home
             </a>
-            <span className="text-[#444] text-sm">/</span>
+            <span className="text-[#999] text-sm">/</span>
             <span className="text-red-500 text-sm font-mono">About</span>
           </div>
 
@@ -60,7 +60,7 @@ const AboutHero = () => {
               believes in building things that matter. From crafting pixel-perfect UIs to
               architecting scalable backends — I love the entire spectrum.
             </p>
-            <p className="text-[#666] text-base font-mono leading-relaxed">
+            <p className="text-[#888] text-base font-mono leading-relaxed">
               Based in India 🇮🇳 · Building since 2.5+ years · Always shipping.
             </p>
           </div>
@@ -78,7 +78,7 @@ const AboutHero = () => {
             ].map((stat, i) => (
               <div key={i} className="flex flex-col">
                 <span className="text-3xl font-black text-white/90">{stat.value}</span>
-                <span className="text-xs font-mono text-[#666] uppercase tracking-wider mt-1">
+                <span className="text-xs font-mono text-[#888] uppercase tracking-wider mt-1">
                   {stat.label}
                 </span>
               </div>
@@ -140,7 +140,7 @@ const AboutHero = () => {
           mounted ? "opacity-100" : "opacity-0"
         }`}
       >
-        <span className="text-[#555] text-xs font-mono uppercase tracking-widest">
+        <span className="text-[#999] text-xs font-mono uppercase tracking-widest">
           Scroll to explore
         </span>
         <div className="w-5 h-8 rounded-full border border-[#333] flex items-start justify-center p-1">

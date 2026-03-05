@@ -107,7 +107,7 @@ const TechDNA = () => {
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Tech DNA</span>
         </h2>
-        <p className="text-[#666] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
           Organized by domain — everything I work with on a daily basis.
         </p>
       </div>

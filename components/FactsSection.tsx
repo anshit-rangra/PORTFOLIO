@@ -181,25 +181,29 @@ const FactsSection = () => {
           <span className="text-white/90">Fun </span>
           <span className="hero-name-gradient">Facts</span>
         </h2>
-        <p className="text-[#666] text-sm sm:text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-sm sm:text-lg font-mono mt-4 max-w-xl">
           A few things that define who I am outside the IDE.
         </p>
       </div>
 
       {/* Scrolling cards row */}
       <div className="relative">
-        <div ref={trackRef} className="flex gap-6 w-max py-4 px-4">
+        <div ref={trackRef} className="flex gap-6 w-max py-4 px-4" role="list">
           {duplicatedFacts.map((fact, i) => {
             const isHovered = hoveredIndex === i;
             const isBlurred = hoveredIndex !== null && hoveredIndex !== i;
+            // Second copy is purely decorative for the marquee loop
+            const isDuplicate = i >= facts.length;
 
             return (
               <div
                 key={`fact-${i}`}
+                role="listitem"
+                aria-hidden={isDuplicate ? "true" : undefined}
                 className="fact-card relative shrink-0 rounded-2xl border border-[#ffffff08] overflow-hidden cursor-default transition-all duration-500 ease-out"
                 style={{
-                  width: isHovered ? "420px" : "280px",
-                  minWidth: "280px",
+                  width: isHovered ? "min(420px, 85vw)" : "min(280px, 85vw)",
+                  minWidth: "min(280px, 85vw)",
                   height: isHovered ? "440px" : "340px",
                   filter: isBlurred ? "blur(4px) brightness(0.4)" : "none",
                   transform: isHovered ? "scale(1.05)" : "scale(1)",
@@ -207,6 +211,8 @@ const FactsSection = () => {
                 }}
                 onMouseEnter={() => handleMouseEnter(i)}
                 onMouseLeave={handleMouseLeave}
+                onTouchStart={() => handleMouseEnter(i)}
+                onTouchEnd={handleMouseLeave}
               >
                 {/* Background image */}
                 <div className="absolute inset-0">

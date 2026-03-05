@@ -109,7 +109,7 @@ const Connect = () => {
           <span className="text-white/90">Let&apos;s </span>
           <span className="hero-name-gradient">Connect</span>
         </h2>
-        <p className="text-[#666] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
           Always open to interesting conversations, collaborations, and new opportunities.
         </p>
       </div>
@@ -159,12 +159,12 @@ const Connect = () => {
             </p>
 
             {/* Description */}
-            <p className="relative text-xs text-[#666] font-mono leading-relaxed group-hover:text-[#888] transition-colors">
+            <p className="relative text-xs text-[#888] font-mono leading-relaxed group-hover:text-[#ccc] transition-colors">
               {s.description}
             </p>
 
             {/* Arrow */}
-            <div className="relative mt-5 flex items-center gap-2 text-[#555] group-hover:text-red-500 transition-all duration-300">
+            <div className="relative mt-5 flex items-center gap-2 text-[#999] group-hover:text-red-500 transition-all duration-300">
               <span className="text-xs font-mono uppercase tracking-wider">Visit</span>
               <svg
                 className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
@@ -181,7 +181,7 @@ const Connect = () => {
 
       {/* CTA */}
       <div className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mt-12 sm:mt-20 text-center">
-        <p className="text-[#555] text-lg font-mono mb-6">
+        <p className="text-[#999] text-lg font-mono mb-6">
           Prefer a direct conversation?
         </p>
         <a

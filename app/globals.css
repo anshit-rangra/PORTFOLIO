@@ -149,10 +149,12 @@ body {
 /* Orbiting rings */
 .hero-orbit {
   animation: orbit 20s linear infinite;
+  will-change: transform;
 }
 
 .hero-orbit-reverse {
   animation: orbit 30s linear infinite reverse;
+  will-change: transform;
 }
 
 @keyframes orbit {
@@ -163,14 +165,17 @@ body {
 /* Floating thumbnails */
 .hero-float-1 {
   animation: float1 6s ease-in-out infinite;
+  will-change: transform;
 }
 
 .hero-float-2 {
   animation: float2 8s ease-in-out infinite;
+  will-change: transform;
 }
 
 .hero-float-3 {
   animation: float3 7s ease-in-out infinite;
+  will-change: transform;
 }
 
 @keyframes float1 {
@@ -191,6 +196,7 @@ body {
 /* Scroll indicator dot */
 .hero-scroll-dot {
   animation: scrollDot 2s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
 @keyframes scrollDot {
@@ -228,3 +234,19 @@ body {
     object-position: center center;
   }
 }
+
+/* Hide scrollbar globally */
+::-webkit-scrollbar {
+  display: none;
+}
+html, body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+  scroll-behavior: smooth;
+}
+/* Also target scrollable children */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+

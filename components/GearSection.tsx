@@ -135,7 +135,7 @@ const GearSection = () => {
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Gears</span>
         </h2>
-        <p className="text-[#666] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
           The tools I use every day to turn ideas into reality.
         </p>
       </div>
@@ -189,7 +189,7 @@ const GearSection = () => {
             </h3>
 
             {/* Specs */}
-            <p className="relative text-sm text-[#666] font-mono leading-relaxed group-hover:text-[#888] transition-colors duration-300">
+            <p className="relative text-sm text-[#888] font-mono leading-relaxed group-hover:text-[#ccc] transition-colors duration-300">
               {gear.specs}
             </p>
           </div>
@@ -204,7 +204,7 @@ const GearSection = () => {
             <p className="text-white/90 font-bold text-lg">
               2.5+ Years & Counting
             </p>
-            <p className="text-[#666] text-sm font-mono">
+            <p className="text-[#888] text-sm font-mono">
               Same setup, same hunger. No excuses — just consistent output.
             </p>
           </div>

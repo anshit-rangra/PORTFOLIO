@@ -137,7 +137,7 @@ const Socials = () => {
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Socials</span>
         </h2>
-        <p className="text-[#666] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
           Follow along the journey — I share learnings, projects, and occasional hot takes.
         </p>
       </div>
@@ -197,12 +197,12 @@ const Socials = () => {
             </p>
 
             {/* Description */}
-            <p className="relative text-xs text-[#666] font-mono leading-relaxed group-hover:text-[#888] transition-colors">
+            <p className="relative text-xs text-[#888] font-mono leading-relaxed group-hover:text-[#ccc] transition-colors">
               {s.description}
             </p>
 
             {/* Arrow */}
-            <div className="relative mt-5 flex items-center gap-2 text-[#555] group-hover:text-red-500 transition-all duration-300">
+            <div className="relative mt-5 flex items-center gap-2 text-[#999] group-hover:text-red-500 transition-all duration-300">
               <span className="text-xs font-mono uppercase tracking-wider">Visit</span>
               <svg
                 className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"

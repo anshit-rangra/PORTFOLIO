@@ -45,6 +45,7 @@ const Navbar = () => {
   return (
     <>
       <nav
+        aria-label="Main navigation"
         className={`fixed top-0 left-0 w-full z-50 backdrop-blur-2xl p-4 sm:p-5 flex items-center justify-between px-5 sm:px-10 md:px-16 lg:px-25 transition-transform duration-300 ${
           visible ? "translate-y-0" : "-translate-y-full"
         }`}
@@ -57,25 +58,27 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <ul className="hidden md:flex justify-around font-mono text-lg lg:text-2xl bg-[#2b28314f] w-auto gap-6 lg:gap-8 px-6 lg:px-8 pt-3 pb-3 rounded-xl border-l-amber-50 border-l-[0.1px]">
           {navLinks.map((link) => (
-            <Link key={link.name} href={link.href}>
-              <li className="cursor-pointer nav-elem">
+            <li key={link.name}>
+              <Link href={link.href} className="cursor-pointer nav-elem flex flex-col overflow-hidden max-h-[2rem]">
                 <span>{link.name}</span>
-                <span>{link.name}</span>
-              </li>
-            </Link>
+                <span aria-hidden="true">{link.name}</span>
+              </Link>
+            </li>
           ))}
         </ul>
 
         {/* Desktop name */}
-        <h1 className="hidden md:block text-xl lg:text-3xl font-thin font-mono hover:cursor-pointer text-[#a7a7a7] shrink-0">
+        <p className="hidden md:block text-xl lg:text-3xl font-thin font-mono text-[#a7a7a7] shrink-0">
           Anshit Rangra
-        </h1>
+        </p>
 
         {/* Mobile Hamburger Button */}
         <button
           className="md:hidden relative z-50 w-10 h-10 flex flex-col items-center justify-center gap-1.5"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle navigation menu"
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-menu"
         >
           <span
             className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
@@ -97,6 +100,8 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       <div
+        id="mobile-menu"
+        aria-label="Mobile navigation"
         className={`fixed inset-0 z-40 bg-black/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 transition-all duration-500 md:hidden ${
           mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
@@ -120,7 +125,7 @@ const Navbar = () => {
           }`}
           style={{ transitionDelay: mobileOpen ? "500ms" : "0ms" }}
         >
-          <p className="text-[#666] text-sm font-mono">Anshit Rangra</p>
+          <p className="text-[#888] text-sm font-mono">Anshit Rangra</p>
         </div>
       </div>
     </>
