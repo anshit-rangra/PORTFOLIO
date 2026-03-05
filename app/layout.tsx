@@ -92,7 +92,7 @@ export const metadata: Metadata = {
   },
   category: "technology",
   verification: {
-    google: "GDruYBcyticxnfY3rRF_8-BW2M4iv6yZ9PJkcyoOlkY",
+    google: "WZxbMOUI4o4VO9Q0ATaV9xfewqiquJ7Dpw98zE54xYM",
   },
   icons: {
     icon: "/zodiac.svg",
