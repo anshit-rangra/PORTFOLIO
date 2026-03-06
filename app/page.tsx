@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Anshit Rangra is a Full Stack Developer and Web3 Developer from India. Explore my skills in React, Next.js, Node.js, Solidity, Solana, Rust, AI/ML, and 30+ technologies. 20+ projects built.",
   alternates: {
-    canonical: "https://anshitrangra.dev",
+    canonical: "https://anshit.dynv6.net",
   },
 };
 

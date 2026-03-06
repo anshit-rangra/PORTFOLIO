@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   description:
     "Anshit Rangra is a Full Stack Developer and Web3 Developer from India, specializing in React, Next.js, Node.js, Solidity, Solana, Rust, and AI/ML. Explore projects, skills, and experience.",
   keywords: [
+    "anshit rangra",
     "Anshit Rangra",
     "Anshit Rangra portfolio",
     "Anshit Rangra developer",
@@ -106,15 +107,17 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Website",
+    "@type": "Person",
+    "@id": `${siteUrl}/#person`,
     name: "Anshit Rangra",
-    alternameName: "Anshit Rangra Portfolio",
+    alternateName: "Anshit Rangra Portfolio",
     url: siteUrl,
     image: `${siteUrl}/app.png`,
     jobTitle: "Full Stack Developer & Web3 Developer",
     description:
       "Full Stack Developer and Web3 Developer from India specializing in React, Next.js, Node.js, Solidity, Solana, Rust, and AI/ML.",
     sameAs: [
+      siteUrl,
       "https://github.com/anshit-rangra",
       "https://www.linkedin.com/in/anshit-rangra/",
       "https://x.com/Anshit_Rangra",
@@ -146,18 +149,29 @@ export default function RootLayout({
       addressCountry: "IN",
     },
     email: "anshitrangra@proton.me",
+    mainEntityOfPage: {
+      "@type": "ProfilePage",
+      "@id": siteUrl,
+    },
   };
 
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
     name: "Anshit Rangra Portfolio",
     url: siteUrl,
     description:
       "Portfolio of Anshit Rangra — Full Stack Developer & Web3 Developer",
     author: {
       "@type": "Person",
+      "@id": `${siteUrl}/#person`,
       name: "Anshit Rangra",
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${siteUrl}/?s={search_term_string}`,
+      "query-input": "required name=search_term_string",
     },
   };
 
@@ -165,7 +179,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <link rel="canonical" href={siteUrl} />
         {/* Preconnect to external image CDNs to reduce latency */}
         <link rel="preconnect" href="https://ik.imagekit.io" />
         <link rel="preconnect" href="https://res.cloudinary.com" />
