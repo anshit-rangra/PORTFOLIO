@@ -95,9 +95,6 @@ export const metadata: Metadata = {
   verification: {
     google: "WZxbMOUI4o4VO9Q0ATaV9xfewqiquJ7Dpw98zE54xYM",
   },
-  icons: {
-    icon: "/zodiac.svg",
-  },
 };
 
 export default function RootLayout({
