@@ -13,14 +13,14 @@ const AboutHero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full min-h-[90vh] flex items-center px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 py-20 lg:py-0 overflow-hidden"
+      className="relative w-full min-h-[90vh] flex items-center px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 py-16 sm:py-20 lg:py-0 overflow-hidden"
     >
       {/* Decorative blurs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-red-500/10 rounded-full blur-[120px] animate-pulse" />
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-violet-500/8 rounded-full blur-[150px] animate-pulse delay-1000" />
       <div className="absolute top-1/2 left-1/3 w-125 h-125 bg-blue-500/5 rounded-full blur-[200px]" />
 
-      <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 lg:gap-16 w-full">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center gap-8 sm:gap-10 lg:gap-16 w-full">
         {/* Left — Text */}
         <div className="flex-1 flex flex-col gap-6 sm:gap-8 text-center lg:text-left">
           {/* Breadcrumb */}
@@ -42,7 +42,7 @@ const AboutHero = () => {
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.9]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight leading-[0.9]">
               <span className="text-white/90 block">I&apos;m</span>
               <span className="hero-name-gradient block">Anshit.</span>
             </h1>
@@ -54,7 +54,7 @@ const AboutHero = () => {
               mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <p className="text-[#a7a7a7] text-lg leading-relaxed">
+            <p className="text-[#a7a7a7] text-base sm:text-lg leading-relaxed">
               A <span className="text-white font-semibold">Full Stack Developer</span> and{" "}
               <span className="text-violet-400 font-semibold">Web3 enthusiast</span> who
               believes in building things that matter. From crafting pixel-perfect UIs to
@@ -93,12 +93,12 @@ const AboutHero = () => {
           }`}
         >
           {/* Main card */}
-          <div className="relative w-72 sm:w-80 md:w-96 lg:w-[420px] h-96 sm:h-[440px] md:h-[520px] lg:h-[580px] rounded-3xl border border-[#ffffff0a] bg-[#0a0a0a]/80 backdrop-blur-md overflow-hidden group">
+          <div className="relative w-64 sm:w-72 md:w-80 lg:w-96 xl:w-105 h-80 sm:h-96 md:h-110 lg:h-130 xl:h-145 rounded-3xl border border-[#ffffff0a] bg-[#0a0a0a]/80 backdrop-blur-md overflow-hidden group">
             {/* Gradient top accent */}
             <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-red-500 via-orange-500 to-red-500" />
 
             {/* Photo placeholder */}
-            <div className="w-full h-60 sm:h-72 md:h-[360px] lg:h-[420px] bg-linear-to-br from-[#1a1a1a] to-[#0a0a0a] flex items-center justify-center relative overflow-hidden">
+            <div className="w-full h-48 sm:h-60 md:h-72 lg:h-90 xl:h-105 bg-linear-to-br from-[#1a1a1a] to-[#0a0a0a] flex items-center justify-center relative overflow-hidden">
               <div className="absolute inset-0 bg-linear-to-br from-red-500/10 via-transparent to-violet-500/10" />
                 <img
                 src="https://ik.imagekit.io/4ytu59yld/PORTFOLIO/1.jpg?updatedAt=1772696731040"
@@ -112,7 +112,7 @@ const AboutHero = () => {
             </div>
 
             {/* Info */}
-            <div className="p-6 space-y-3">
+            <div className="p-4 sm:p-6 space-y-3">
               <div>
                 <h3 className="text-xl font-bold text-white/90">Anshit Rangra</h3>
                 <p className="text-red-500 text-sm font-mono">Full Stack + Web3 Developer</p>

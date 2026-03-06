@@ -183,17 +183,17 @@ const ProjectsGrid = () => {
   }, [activeFilter]);
 
   return (
-    <section ref={sectionRef} className="relative pb-32 overflow-hidden">
+    <section ref={sectionRef} className="relative pb-20 sm:pb-32 overflow-hidden">
       <div className="absolute top-1/4 -right-20 w-80 h-80 bg-purple-500/5 rounded-full blur-[150px]" />
 
       {/* Filter bar */}
-      <div className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-8 sm:mb-12">
+      <div className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-6 sm:mb-8 md:mb-12">
         <div className="flex flex-wrap gap-2 sm:gap-3">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveFilter(cat)}
-              className={`px-5 py-2.5 rounded-xl text-sm font-mono transition-all duration-300 border ${
+              className={`px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs sm:text-sm font-mono transition-all duration-300 border ${
                 activeFilter === cat
                   ? "bg-red-500/10 border-red-500/30 text-red-500"
                   : "bg-[#0a0a0a]/60 border-[#ffffff08] text-[#888] hover:border-[#ffffff18] hover:text-[#a7a7a7]"
@@ -208,7 +208,7 @@ const ProjectsGrid = () => {
       {/* Projects grid */}
       <div
         ref={gridRef}
-        className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6"
+        className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6"
       >
         {filteredProjects.map((project, i) => {
           const status = statusConfig[project.status];
@@ -241,15 +241,15 @@ const ProjectsGrid = () => {
                 }}
               />
 
-              <div className="relative p-8">
+              <div className="relative p-5 sm:p-6 md:p-8">
                 {/* Header row */}
-                <div className="flex items-start justify-between mb-5">
+                <div className="flex items-start justify-between mb-3 sm:mb-5 gap-3">
                   <div className="flex items-center gap-4">
                     <span className="text-3xl group-hover:scale-110 transition-transform duration-500 inline-block">
                       {project.icon}
                     </span>
                     <div>
-                      <h3 className="text-xl font-bold text-white/90 group-hover:text-white transition-colors">
+                      <h3 className="text-lg sm:text-xl font-bold text-white/90 group-hover:text-white transition-colors">
                         {project.title}
                       </h3>
                       <span
@@ -281,12 +281,12 @@ const ProjectsGrid = () => {
                 </div>
 
                 {/* Description */}
-                <p className="text-[#888] text-sm font-mono leading-relaxed mb-6 group-hover:text-[#aaa] transition-colors">
+                <p className="text-[#888] text-xs sm:text-sm font-mono leading-relaxed mb-4 sm:mb-6 group-hover:text-[#aaa] transition-colors">
                   {project.description}
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
@@ -333,7 +333,7 @@ const ProjectsGrid = () => {
       </div>
 
       {/* More coming badge */}
-      <div className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mt-10 sm:mt-16 text-center">
+      <div className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mt-8 sm:mt-10 md:mt-16 text-center">
         <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl border border-[#ffffff08] bg-[#0a0a0a]/60 backdrop-blur-md">
           <span className="text-xl">🚧</span>
           <span className="text-[#888] text-sm font-mono">

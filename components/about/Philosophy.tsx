@@ -108,7 +108,7 @@ const Philosophy = () => {
       <div className="absolute bottom-1/3 -right-20 w-96 h-96 bg-cyan-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-16">
+      <div ref={headingRef} className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-8 sm:mb-10 md:mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
@@ -119,7 +119,7 @@ const Philosophy = () => {
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Philosophy</span>
         </h2>
-        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-sm sm:text-lg font-mono mt-4 max-w-xl">
           Core beliefs that shape how I work, learn, and grow every day.
         </p>
       </div>
@@ -127,12 +127,12 @@ const Philosophy = () => {
       {/* Grid */}
       <div
         ref={gridRef}
-        className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
+        className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6"
       >
         {philosophies.map((p, i) => (
           <div
             key={i}
-            className="group relative rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/80 backdrop-blur-md p-8 transition-all duration-500 hover:border-[#ffffff18] cursor-default"
+            className="group relative rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/80 backdrop-blur-md p-5 sm:p-6 md:p-8 transition-all duration-500 hover:border-[#ffffff18] cursor-default"
             onMouseEnter={(e) => {
               e.currentTarget.style.boxShadow = `0 4px 40px ${p.color}15, 0 0 80px ${p.color}08`;
               e.currentTarget.style.borderColor = `${p.color}30`;
@@ -151,7 +151,7 @@ const Philosophy = () => {
             />
 
             {/* Icon */}
-            <span className="relative text-4xl block mb-5 group-hover:scale-110 transition-transform duration-500">
+            <span className="relative text-3xl sm:text-4xl block mb-3 sm:mb-5 group-hover:scale-110 transition-transform duration-500">
               {p.icon}
             </span>
 

@@ -170,7 +170,7 @@ const FactsSection = () => {
       <div className="absolute bottom-1/3 -left-20 w-96 h-96 bg-red-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-16">
+      <div ref={headingRef} className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-8 sm:mb-10 md:mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
@@ -188,7 +188,7 @@ const FactsSection = () => {
 
       {/* Scrolling cards row */}
       <div className="relative">
-        <div ref={trackRef} className="flex gap-6 w-max py-4 px-4" role="list">
+        <div ref={trackRef} className="flex gap-3 sm:gap-4 md:gap-6 w-max py-4 px-4" role="list">
           {duplicatedFacts.map((fact, i) => {
             const isHovered = hoveredIndex === i;
             const isBlurred = hoveredIndex !== null && hoveredIndex !== i;
@@ -237,7 +237,7 @@ const FactsSection = () => {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-10 flex flex-col justify-end h-full p-7">
+                <div className="relative z-10 flex flex-col justify-end h-full p-4 sm:p-5 md:p-7">
                   <span className="text-4xl mb-3">{fact.emoji}</span>
                   <h3
                     className="text-xl font-bold text-white mb-2 transition-all duration-500"

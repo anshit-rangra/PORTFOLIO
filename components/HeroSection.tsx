@@ -47,7 +47,7 @@ const HeroSection = () => {
   }, [cycleImage]);
 
   return (
-    <section className="relative w-full min-h-[calc(100vh-88px)] lg:h-[calc(100vh-88px)] flex flex-col lg:flex-row items-center justify-center lg:justify-between px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 py-20 lg:py-0 overflow-hidden gap-12 lg:gap-0">
+    <section className="relative w-full min-h-[calc(100vh-88px)] lg:h-[calc(100vh-88px)] flex flex-col lg:flex-row items-center justify-center lg:justify-between px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 py-16 sm:py-20 lg:py-0 overflow-hidden gap-8 sm:gap-12 lg:gap-0">
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 w-48 sm:w-72 h-48 sm:h-72 bg-red-500/10 rounded-full blur-[120px]" />
       <div className="absolute bottom-20 right-10 sm:right-20 w-64 sm:w-96 h-64 sm:h-96 bg-violet-500/10 rounded-full blur-[150px] delay-1000" />
@@ -77,7 +77,7 @@ const HeroSection = () => {
         {/* Name */}
         <div className="space-y-0">
           <h1
-            className={`hero-name text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-none font-black tracking-tight transition-all duration-700 delay-300 ${
+            className={`hero-name text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-none font-black tracking-tight transition-all duration-700 delay-300 ${
               mounted
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
@@ -197,16 +197,16 @@ const HeroSection = () => {
 
       {/* Right Side - Image Gallery with Cool Transitions */}
       <div
-        className={`relative z-10 flex items-center justify-center w-full sm:w-[80%] md:w-[60%] lg:w-[40%] h-100 sm:h-112.5 lg:h-full transition-all duration-1000 delay-500 ${
+        className={`relative z-10 flex items-center justify-center w-full sm:w-[80%] md:w-[60%] lg:w-[40%] h-80 sm:h-100 md:h-112.5 lg:h-full transition-all duration-1000 delay-500 ${
           mounted ? "opacity-100 scale-100" : "opacity-0 scale-90"
         }`}
       >
         {/* Orbiting ring */}
-        <div className="absolute w-72 sm:w-80 lg:w-105 h-72 sm:h-80 lg:h-105 rounded-full border border-[#ffffff08] hero-orbit" />
-        <div className="absolute w-80 sm:w-96 lg:w-130 h-80 sm:h-96 lg:h-130 rounded-full border border-[#ffffff05] hero-orbit-reverse" />
+        <div className="absolute w-56 sm:w-72 md:w-80 lg:w-105 h-56 sm:h-72 md:h-80 lg:h-105 rounded-full border border-[#ffffff08] hero-orbit" />
+        <div className="absolute w-64 sm:w-80 md:w-96 lg:w-130 h-64 sm:h-80 md:h-96 lg:h-130 rounded-full border border-[#ffffff05] hero-orbit-reverse" />
 
         {/* Main Image Card Stack */}
-        <div className="relative w-60 sm:w-70 lg:w-[320px] h-72 sm:h-80 lg:h-100 perspective-distant">
+        <div className="relative w-48 sm:w-60 md:w-70 lg:w-[320px] h-60 sm:h-72 md:h-80 lg:h-100 perspective-distant">
           {placeholderImages.map((img, index) => {
             const offset = (index - activeIndex + placeholderImages.length) % placeholderImages.length;
             const isActive = offset === 0;
@@ -277,7 +277,7 @@ const HeroSection = () => {
 
         {/* Floating small thumbnails */}
         <div
-          className={`absolute -left-4 sm:-left-8 top-8 sm:top-16 w-12 sm:w-16 h-12 sm:h-16 rounded-xl overflow-hidden border border-white/10 shadow-2xl hero-float-1 hidden sm:block transition-all duration-1000 delay-700 ${
+          className={`absolute -left-2 sm:-left-8 top-8 sm:top-16 w-10 sm:w-16 h-10 sm:h-16 rounded-xl overflow-hidden border border-white/10 shadow-2xl hero-float-1 hidden sm:block transition-all duration-1000 delay-700 ${
             mounted ? "opacity-70 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -285,7 +285,7 @@ const HeroSection = () => {
         </div>
 
         <div
-          className={`absolute -right-2 sm:-right-4 top-16 sm:top-24 w-10 sm:w-14 h-10 sm:h-14 rounded-lg overflow-hidden border border-white/10 shadow-2xl hero-float-2 hidden sm:block transition-all duration-1000 delay-900 ${
+          className={`absolute -right-1 sm:-right-4 top-16 sm:top-24 w-8 sm:w-14 h-8 sm:h-14 rounded-lg overflow-hidden border border-white/10 shadow-2xl hero-float-2 hidden sm:block transition-all duration-1000 delay-900 ${
             mounted ? "opacity-50 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -293,7 +293,7 @@ const HeroSection = () => {
         </div>
 
         <div
-          className={`absolute left-2 sm:left-4 bottom-12 sm:bottom-20 w-10 sm:w-12 h-10 sm:h-12 rounded-lg overflow-hidden border border-white/10 shadow-2xl hero-float-3 hidden sm:block transition-all duration-1000 delay-1100 ${
+          className={`absolute left-1 sm:left-4 bottom-12 sm:bottom-20 w-8 sm:w-12 h-8 sm:h-12 rounded-lg overflow-hidden border border-white/10 shadow-2xl hero-float-3 hidden sm:block transition-all duration-1000 delay-1100 ${
             mounted ? "opacity-40 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >

@@ -216,7 +216,7 @@ const row2Skills: Skill[] = [
 
 const SkillCard = ({ skill }: { skill: Skill }) => (
   <div
-    className="skill-tile group relative flex items-center gap-5 px-8 py-6 rounded-2xl border border-[#ffffff08] bg-[#0e0e0e]/70 backdrop-blur-md hover:border-[#ffffff18] transition-all duration-400 cursor-default shrink-0"
+    className="skill-tile group relative flex items-center gap-3 sm:gap-5 px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 rounded-xl sm:rounded-2xl border border-[#ffffff08] bg-[#0e0e0e]/70 backdrop-blur-md hover:border-[#ffffff18] transition-all duration-400 cursor-default shrink-0"
     onMouseEnter={(e) => {
       e.currentTarget.style.boxShadow = `0 4px 30px ${skill.color}20, 0 0 60px ${skill.color}08`;
       e.currentTarget.style.borderColor = `${skill.color}30`;
@@ -236,7 +236,7 @@ const SkillCard = ({ skill }: { skill: Skill }) => (
 
     {/* Icon — now using <img> for PNG URLs */}
     <div
-      className="relative w-16 h-16 rounded-xl flex items-center justify-center shrink-0"
+      className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-lg sm:rounded-xl flex items-center justify-center shrink-0"
       style={{
         background: skill.bg,
         border: `1px solid ${skill.color}20`,
@@ -247,13 +247,13 @@ const SkillCard = ({ skill }: { skill: Skill }) => (
         alt={skill.name}
         width={32}
         height={32}
-        className="w-8 h-8 object-contain"
+        className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 object-contain"
         loading="lazy"
       />
     </div>
 
     {/* Name */}
-    <span className="relative text-lg font-semibold text-[#c0c0c0] group-hover:text-white transition-colors duration-300 whitespace-nowrap">
+    <span className="relative text-sm sm:text-base md:text-lg font-semibold text-[#c0c0c0] group-hover:text-white transition-colors duration-300 whitespace-nowrap">
       {skill.name}
     </span>
   </div>
@@ -355,7 +355,7 @@ const SkillsSection = () => {
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-violet-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-16">
+      <div ref={headingRef} className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-8 sm:mb-10 md:mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
@@ -366,14 +366,14 @@ const SkillsSection = () => {
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Skills</span>
         </h2>
-        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-sm sm:text-lg font-mono mt-4 max-w-xl">
           Technologies and tools I use to bring ideas to life.
         </p>
       </div>
 
       {/* Row 1 — auto-scrolls LEFT, infinite */}
-      <div className="mb-8">
-        <div ref={row1Ref} className="flex gap-6 w-max">
+      <div className="mb-6 sm:mb-8">
+        <div ref={row1Ref} className="flex gap-3 sm:gap-4 md:gap-6 w-max">
           {[...row1Skills, ...row1Skills].map((skill, i) => (
             <SkillCard key={`r1-${i}`} skill={skill} />
           ))}
@@ -382,7 +382,7 @@ const SkillsSection = () => {
 
       {/* Row 2 — auto-scrolls RIGHT, infinite */}
       <div>
-        <div ref={row2Ref} className="flex gap-6 w-max">
+        <div ref={row2Ref} className="flex gap-3 sm:gap-4 md:gap-6 w-max">
           {[...row2Skills, ...row2Skills].map((skill, i) => (
             <SkillCard key={`r2-${i}`} skill={skill} />
           ))}

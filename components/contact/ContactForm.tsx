@@ -77,13 +77,12 @@ const ContactForm = () => {
   };
 
   const inputClasses =
-    "w-full bg-[#0a0a0a]/80 border border-[#ffffff10] rounded-xl px-5 py-4 text-white/90 font-mono text-sm placeholder-[#444] focus:outline-none focus:border-red-500/40 focus:ring-1 focus:ring-red-500/20 transition-all duration-300";
-
+    "w-full bg-[#0a0a0a]/80 border border-[#ffffff10] rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white/90 font-mono text-sm placeholder-[#444] focus:outline-none focus:border-red-500/40 focus:ring-1 focus:ring-red-500/20 transition-all duration-300";
   return (
-    <section ref={sectionRef} className="relative pb-32 overflow-hidden">
+    <section ref={sectionRef} className="relative pb-20 sm:pb-32 overflow-hidden">
       <div className="absolute top-1/3 -left-20 w-80 h-80 bg-red-500/5 rounded-full blur-[150px]" />
 
-      <div className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-10 sm:gap-16">
+      <div className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
         {/* Left — Info */}
         <div ref={infoRef} className="flex-1 flex flex-col gap-8 max-w-md">
           <div>

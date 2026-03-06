@@ -124,7 +124,7 @@ const GearSection = () => {
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-purple-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-16">
+      <div ref={headingRef} className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-8 sm:mb-10 md:mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
@@ -135,7 +135,7 @@ const GearSection = () => {
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Gears</span>
         </h2>
-        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-sm sm:text-lg font-mono mt-4 max-w-xl">
           The tools I use every day to turn ideas into reality.
         </p>
       </div>
@@ -143,12 +143,12 @@ const GearSection = () => {
       {/* Gear cards grid */}
       <div
         ref={cardsRef}
-        className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
+        className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6"
       >
         {gears.map((gear, i) => (
           <div
             key={i}
-            className="group relative rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/80 backdrop-blur-md p-8 transition-all duration-500 hover:border-[#ffffff18] cursor-default"
+            className="group relative rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/80 backdrop-blur-md p-5 sm:p-6 md:p-8 transition-all duration-500 hover:border-[#ffffff18] cursor-default"
             onMouseEnter={(e) => {
               e.currentTarget.style.boxShadow = `0 4px 40px ${gear.color}15, 0 0 80px ${gear.color}08`;
               e.currentTarget.style.borderColor = `${gear.color}30`;
@@ -179,12 +179,12 @@ const GearSection = () => {
             </span>
 
             {/* Emoji */}
-            <div className="text-5xl mb-5 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
+            <div className="text-4xl sm:text-5xl mb-4 sm:mb-5 transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1">
               {gear.emoji}
             </div>
 
             {/* Name */}
-            <h3 className="relative text-xl font-bold text-white/90 mb-2 group-hover:text-white transition-colors duration-300">
+            <h3 className="relative text-lg sm:text-xl font-bold text-white/90 mb-2 group-hover:text-white transition-colors duration-300">
               {gear.name}
             </h3>
 
@@ -197,8 +197,8 @@ const GearSection = () => {
       </div>
 
       {/* Duration badge */}
-      <div ref={badgeRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mt-10 sm:mt-16">
-        <div className="inline-flex items-center gap-4 px-8 py-5 rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/60 backdrop-blur-md">
+      <div ref={badgeRef} className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mt-8 sm:mt-10 md:mt-16">
+        <div className="inline-flex items-center gap-3 sm:gap-4 px-5 sm:px-8 py-4 sm:py-5 rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/60 backdrop-blur-md">
           <span className="text-3xl">⏱️</span>
           <div>
             <p className="text-white/90 font-bold text-lg">

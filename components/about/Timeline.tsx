@@ -132,7 +132,7 @@ const Timeline = () => {
       <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-red-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-12 sm:mb-20">
+      <div ref={headingRef} className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-12 md:mb-20">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
@@ -143,13 +143,13 @@ const Timeline = () => {
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Timeline</span>
         </h2>
-        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-sm sm:text-lg font-mono mt-4 max-w-xl">
           How I got here — from zero to building full-stack & Web3 applications.
         </p>
       </div>
 
       {/* Timeline */}
-      <div className="relative px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28">
+      <div className="relative px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28">
         {/* Vertical line */}
         <div className="absolute left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-[#ffffff15] to-transparent hidden lg:block" />
 
@@ -167,7 +167,7 @@ const Timeline = () => {
                 className={`flex-1 ${i % 2 === 0 ? "lg:text-right lg:pr-16" : "lg:text-left lg:pl-16"}`}
               >
                 <div
-                  className="group inline-block rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/80 backdrop-blur-md p-8 transition-all duration-500 hover:border-[#ffffff18] cursor-default max-w-lg"
+                  className="group inline-block rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/80 backdrop-blur-md p-5 sm:p-6 md:p-8 transition-all duration-500 hover:border-[#ffffff18] cursor-default max-w-lg w-full"
                   onMouseEnter={(e) => {
                     e.currentTarget.style.boxShadow = `0 4px 40px ${item.color}15, 0 0 80px ${item.color}08`;
                     e.currentTarget.style.borderColor = `${item.color}30`;

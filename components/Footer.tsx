@@ -6,9 +6,9 @@ const Footer = () => {
       {/* Glow accent */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-px bg-linear-to-r from-transparent via-red-500/50 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-16 lg:px-20 xl:px-28 py-10 sm:py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-16 lg:px-20 xl:px-28 py-8 sm:py-10 md:py-12">
         {/* Top row */}
-        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+        <div className="flex flex-col gap-8 sm:gap-10 lg:flex-row lg:items-start lg:justify-between">
           {/* Brand */}
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3">
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation */}
-          <div className="flex gap-10 sm:gap-16">
+          <div className="flex gap-8 sm:gap-10 md:gap-16">
             <div className="flex flex-col gap-3">
               <h3 className="text-xs font-mono uppercase tracking-widest text-[#999]">
                 Navigate
@@ -139,7 +139,7 @@ const Footer = () => {
         <div className="w-full h-px bg-[#ffffff08] my-8" />
 
         {/* Bottom row */}
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+        <div className="flex flex-col items-center gap-3 sm:gap-4 sm:flex-row sm:justify-between">
           <p className="text-[#999] text-xs font-mono text-center sm:text-left">
             &copy; {new Date().getFullYear()} Anshit Rangra. All rights reserved.
           </p>

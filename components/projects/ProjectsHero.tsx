@@ -10,7 +10,7 @@ const ProjectsHero = () => {
   }, []);
 
   return (
-    <section className="relative w-full pt-24 sm:pt-32 pb-14 sm:pb-20 px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 overflow-hidden">
+    <section className="relative w-full pt-20 sm:pt-24 md:pt-32 pb-10 sm:pb-14 md:pb-20 px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 overflow-hidden">
       {/* Decorative blurs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-red-500/10 rounded-full blur-[120px] animate-pulse" />
       <div className="absolute bottom-10 right-20 w-80 h-80 bg-violet-500/8 rounded-full blur-[150px] animate-pulse delay-1000" />
@@ -34,14 +34,14 @@ const ProjectsHero = () => {
           mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.9]">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight leading-[0.9]">
           <span className="text-white/90 block">My</span>
           <span className="hero-name-gradient block">Projects.</span>
         </h1>
       </div>
 
       <p
-        className={`text-[#888] text-lg font-mono mt-6 max-w-2xl transition-all duration-700 delay-400 ${
+        className={`text-[#888] text-base sm:text-lg font-mono mt-4 sm:mt-6 max-w-2xl transition-all duration-700 delay-400 ${
           mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >

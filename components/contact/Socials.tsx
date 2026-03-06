@@ -126,7 +126,7 @@ const Socials = () => {
       <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-blue-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-16">
+      <div ref={headingRef} className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-8 sm:mb-10 md:mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
@@ -137,7 +137,7 @@ const Socials = () => {
           <span className="text-white/90">My </span>
           <span className="hero-name-gradient">Socials</span>
         </h2>
-        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-sm sm:text-lg font-mono mt-4 max-w-xl">
           Follow along the journey — I share learnings, projects, and occasional hot takes.
         </p>
       </div>
@@ -145,7 +145,7 @@ const Socials = () => {
       {/* Social cards */}
       <div
         ref={gridRef}
-        className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
+        className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6"
       >
         {socials.map((s, i) => (
           <a
@@ -153,7 +153,7 @@ const Socials = () => {
             href={s.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/80 backdrop-blur-md p-8 transition-all duration-500 hover:border-[#ffffff18] hover:-translate-y-2 block"
+            className="group relative rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/80 backdrop-blur-md p-5 sm:p-6 md:p-8 transition-all duration-500 hover:border-[#ffffff18] hover:-translate-y-2 block"
             onMouseEnter={(e) => {
               e.currentTarget.style.boxShadow = `0 8px 40px ${s.color}15, 0 0 80px ${s.color}08`;
               e.currentTarget.style.borderColor = `${s.color}30`;
@@ -173,7 +173,7 @@ const Socials = () => {
 
             {/* Icon */}
             <div
-              className="relative w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all duration-500 group-hover:scale-110"
+              className="relative w-11 h-11 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-5 transition-all duration-500 group-hover:scale-110"
               style={{
                 color: s.color,
                 background: `${s.color}10`,

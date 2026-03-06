@@ -98,7 +98,7 @@ const Connect = () => {
       <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-blue-500/5 rounded-full blur-[180px]" />
 
       {/* Heading */}
-      <div ref={headingRef} className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-10 sm:mb-16">
+      <div ref={headingRef} className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mb-8 sm:mb-10 md:mb-16">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-0.5 w-12 bg-linear-to-r from-red-500 to-transparent" />
           <span className="text-red-500 text-sm font-mono uppercase tracking-widest">
@@ -109,7 +109,7 @@ const Connect = () => {
           <span className="text-white/90">Let&apos;s </span>
           <span className="hero-name-gradient">Connect</span>
         </h2>
-        <p className="text-[#888] text-lg font-mono mt-4 max-w-xl">
+        <p className="text-[#888] text-sm sm:text-lg font-mono mt-4 max-w-xl">
           Always open to interesting conversations, collaborations, and new opportunities.
         </p>
       </div>
@@ -117,7 +117,7 @@ const Connect = () => {
       {/* Social cards */}
       <div
         ref={cardsRef}
-        className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
+        className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6"
       >
         {socials.map((s, i) => (
           <a
@@ -125,7 +125,7 @@ const Connect = () => {
             href={s.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/80 backdrop-blur-md p-8 transition-all duration-500 hover:border-[#ffffff18] hover:-translate-y-2 block"
+            className="group relative rounded-2xl border border-[#ffffff08] bg-[#0a0a0a]/80 backdrop-blur-md p-5 sm:p-6 md:p-8 transition-all duration-500 hover:border-[#ffffff18] hover:-translate-y-2 block"
             onMouseEnter={(e) => {
               e.currentTarget.style.boxShadow = `0 8px 40px ${s.color}15, 0 0 80px ${s.color}08`;
               e.currentTarget.style.borderColor = `${s.color}30`;
@@ -144,7 +144,7 @@ const Connect = () => {
             />
 
             {/* Icon */}
-            <span className="relative text-4xl block mb-5 group-hover:scale-110 transition-transform duration-500">
+            <span className="relative text-3xl sm:text-4xl block mb-3 sm:mb-5 group-hover:scale-110 transition-transform duration-500">
               {s.icon}
             </span>
 
@@ -180,7 +180,7 @@ const Connect = () => {
       </div>
 
       {/* CTA */}
-      <div className="px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 mt-12 sm:mt-20 text-center">
+      <div className="px-4 sm:px-8 md:px-14 lg:px-20 xl:px-28 mt-10 sm:mt-12 md:mt-20 text-center">
         <p className="text-[#999] text-lg font-mono mb-6">
           Prefer a direct conversation?
         </p>
