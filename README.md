@@ -65,5 +65,6 @@ I'm Anshit, a passionate developer from India specializing in React, Next.js, No
 - [GitHub](https://github.com/anshit-rangra)
 - [Instagram](https://www.instagram.com/anshit.rangra/)
 
+
 ## 📜 License
 This project is open-source and free to explore. If you use code snippets, giving credit is highly appreciated!
