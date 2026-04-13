@@ -3,6 +3,25 @@
 :root {
   --foreground: #ffffff;
   --background: #000000;
+  --gray-light: #a7a7a7;
+  --orange: #ff6b35;
+  --border-dark: #333;
+  --border-hover: #555;
+  --box-shadow-red: rgba(242, 7, 7, 0.3);
+  --box-shadow-red-strong: rgba(242, 7, 7, 0.5);
+  --box-shadow-red-light: rgba(242, 7, 7, 0.1);
+  --box-shadow-white: rgba(255, 255, 255, 0.1);
+  --box-shadow-white-strong: rgba(255, 255, 255, 0.2);
+
+
+
+  --red-main: #f20707;
+  --red-light: #ff4d4d;
+  --red-dark: #cc0000;
+
+  /* --red-main: #070bf2;
+  --red-light: #4d53ff;
+  --red-dark: #0000cc; */
 }
 
 
@@ -33,7 +52,7 @@ html {
   flex-direction: column;
   
   & span {
-    color: #a7a7a7;
+    color: var(--gray-light);
   }
   
 }
@@ -43,7 +62,7 @@ html {
 }
 
 .nav-elem:hover  span {
-  color: #f20707;  
+  color: var(--red-main);
   transform: translateY(-100%);
 
 }
@@ -56,7 +75,7 @@ html {
 }
 
 .hero-name-gradient {
-  background: linear-gradient(135deg, #f20707 0%, #ff4d4d 25%, #ff6b35 50%, #f20707 75%, #cc0000 100%);
+  background: linear-gradient(135deg, var(--red-main) 0%, var(--red-light) 25%, var(--orange) 50%, var(--red-main) 75%, var(--red-dark) 100%);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,8 +90,8 @@ html {
 
 /* CTA Buttons */
 .hero-cta-primary {
-  background: linear-gradient(135deg, #f20707, #cc0000);
-  box-shadow: 0 0 30px rgba(242, 7, 7, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, var(--red-main), var(--red-dark));
+  box-shadow: 0 0 30px var(--box-shadow-red), inset 0 1px 0 var(--box-shadow-white);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -80,7 +99,7 @@ html {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #ff4d4d, #f20707);
+  background: linear-gradient(135deg, var(--red-light), var(--red-main));
   opacity: 0;
   transition: opacity 0.4s ease;
   border-radius: inherit;
@@ -88,7 +107,7 @@ html {
 
 .hero-cta-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 50px rgba(242, 7, 7, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 50px var(--box-shadow-red-strong), inset 0 1px 0 var(--box-shadow-white-strong);
 }
 
 .hero-cta-primary:hover::before {
@@ -96,12 +115,12 @@ html {
 }
 
 .hero-cta-secondary {
-  border: 1px solid #333;
+  border: 1px solid var(--border-dark);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hero-cta-secondary:hover {
-  border-color: #555;
+  border-color: var(--border-hover);
   background: rgba(255, 255, 255, 0.03);
   transform: translateY(-2px);
 }
